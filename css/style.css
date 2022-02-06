@@ -1,16 +1,85 @@
 *{
-    width: 0px;
-    height: 0px;
-    
-}
-#logo img{
-    width: 100px;
-    height: 100px;
-    margin-left: 30px;
-    transition: all 1s ease-in-out;
+    margin: 0px;
+    padding: 0px;
 
 }
-#logo img:hover{
-    width: 200px;
-    height: 200px;
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+
+/* Navigation Bar: logo */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+}
+/* #logo img:hover{
+  
+} */
+
+/* Navigation Bar: List Styling */
+
+#navbar{
+    position: relative;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul il{
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+     display: flex;
+     flex-direction: column;
+     padding: 3px 22px;
+     height: 400px;
+     justify-content: center;
+     align-items: center;
+    
+}
+
+#home::before{
+    content: "";
+    background: url("../bg1.jpg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
 }
